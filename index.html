@@ -16,8 +16,8 @@
     </div>
   </header>
 	<div class="container">
-
-    <form action="index.html" method="post" novalidate>
+    <!-- onsubmit="sendEmail(); reset(); return false" -->
+    <form  id="form"action="index.html" method="post" novalidate >
       <p id="form-hint" class="form-hint"><span class="asterisk">*</span> - required field</p>
 
       <div class="basic-info-and-shirt-box">       
@@ -27,6 +27,7 @@
           <label for="name">Name: <span class="asterisk">*</span>
             <input type="text" id="name" name="user-name" class="error-border">
             <span id="name-hint" class="name-hint hint">Name field cannot be blank</span>
+          
           </label>
           
           
@@ -227,14 +228,10 @@
         </div>                  
       </fieldset>        
       
-      <button type="submit">Register</button>
-         
+      <button id="button" type="submit">Register</button>
+     
     </form>
-    <section class="modal">    
-      <h2>Thank you!</h2>
-      <p>We've added your card details</p>
-      <button type="button" class="btn close">Continue</button>
-    </section>
+   
   </div>
   <script src="js/script.js"></script>
 </body>
